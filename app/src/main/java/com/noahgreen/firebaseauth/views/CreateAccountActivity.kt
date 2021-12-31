@@ -27,12 +27,12 @@ class CreateAccountActivity : AppCompatActivity() {
 
         btnSignIn2.setOnClickListener {
             startActivity(Intent(this, SignInActivity::class.java))
-            toast("please sign into your account")
+            toast("Please sign into your account")
             finish()
         }
     }
 
-    //this checks for a signed in user and then gives the 'welcome back' toast
+    //this checks for a signed in user and then gives the 'welcome back' toast for the user
 
     override fun onStart() {
         super.onStart()
@@ -60,7 +60,7 @@ class CreateAccountActivity : AppCompatActivity() {
                 }
             }
         } else {
-            toast("passwords are not matching !")
+            toast("Passwords do not match, try again!")
         }
         return identical
     }
