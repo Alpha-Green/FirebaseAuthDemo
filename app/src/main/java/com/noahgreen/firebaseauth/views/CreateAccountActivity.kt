@@ -32,7 +32,7 @@ class CreateAccountActivity : AppCompatActivity() {
         }
     }
 
-    /* check if there's a signed-in user*/
+    //this checks for a signed in user and then gives the 'welcome back' toast
 
     override fun onStart() {
         super.onStart()
@@ -86,8 +86,7 @@ class CreateAccountActivity : AppCompatActivity() {
         }
     }
 
-    /* send verification email to the new user. This will only
-    *  work if the firebase user is not null.
+    /* this sends verification email to the new user. this only happens for non-null firebase user.
     */
 
     private fun sendEmailVerification() {
