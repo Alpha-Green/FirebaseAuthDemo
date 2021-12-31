@@ -80,7 +80,7 @@ class CreateAccountActivity : AppCompatActivity() {
                         startActivity(Intent(this, HomeActivity::class.java))
                         finish()
                     } else {
-                        toast("failed to Authenticate !")
+                        toast("account creation failed. Please try again with right details!")
                     }
                 }
         }

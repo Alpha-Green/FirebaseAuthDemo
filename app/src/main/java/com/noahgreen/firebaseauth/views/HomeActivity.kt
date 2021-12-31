@@ -13,7 +13,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        // sign out a user
+        //with this line of code, we sign out the user
 
         btnSignOut.setOnClickListener {
             firebaseAuth.signOut()
@@ -23,4 +23,4 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 }
-
+//These codes were gotten from site on google

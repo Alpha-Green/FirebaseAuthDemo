@@ -30,7 +30,7 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun notEmpty(): Boolean = signInEmail.isNotEmpty() && signInPassword.isNotEmpty()
-
+ //with this lines of code we are able to sign in the user and then take the user to the home activity directly
     private fun signInUser() {
         signInEmail = etSignInEmail.text.toString().trim()
         signInPassword = etSignInPassword.text.toString().trim()
